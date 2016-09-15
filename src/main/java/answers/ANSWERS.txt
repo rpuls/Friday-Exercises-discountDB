@@ -1,0 +1,12 @@
+ 4. Explain the content of each column (especially the DTYPE column) and how it relates to the object model.
+
+    here we see all attributes in one table, because the default mapping for inheritense is single table,
+    the DTYPE is an kind of enumeration of all the classes parent+child classes, the field in the tuple
+    will explain which typ of class it comes from.
+    -all the other columns pretty much explain themselves. they are from the all the classes, and have to
+    be nullable since not all child classes contains the same attributes.
+
+5 Regenerate the tables and explain the purpose/content of each table and each column (especially the DTYPE
+column) and how they relate to the object model.
+
+    Now each child class is in a seperate table, this can be useful to optimze normalisation in bigger databases....
